@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Circle Page</title>
+    
+    <style>
+    .circle-block{
+        width: 1400px;
+        height: 400px;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+        
+            
+            
+
+
+    }
+    .parent-circle{
+        width: 200px;
+        height: 200px;
+        background: black;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+    }
+    .parent-circle:hover{
+        background: white;
+    }
+    .child-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        display: inline-block;
+        transition: all 0.4s ease-in-out;
+        display:none;
+    
+        
+
+    }
+    .parent-circle:hover .child-circle{
+        width: 200px;
+        height: 200px;
+    }
+        
+    .child-circle.yellow{
+        background: yellow;
+
+    }
+    .child-circle.aqua{
+        background: aqua;
+
+    }
+    .child-circle.orange{
+        background: orange;
+
+    }
+   .child-circle.purple{
+       background: purple;
+
+    }       
+    .child-circle.green{
+        background: green;
+
+    }
+    </style>
+    
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+     <section class="circle-block">
+        <div class="parent-circle">
+            <div class="child-circle aqua" >
+            </div>
+        </div>
+    </section>
+
+    <section class="circle-block">
+        <div class="parent-circle">
+            <div class="child-circle orange" >
+            </div>
+        </div>
+        <div class="parent-circle">
+            <div class="child-circle purple">
+                 
+            </div>   
+        </div>
+        <div class="parent-circle">
+            <div class="child-circle green">
+            </div>
+        </div>
+    </section>
+     <section class="circle-block">
+        <div class="parent-circle">
+            <div class="child-circle yellow" >
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+    
